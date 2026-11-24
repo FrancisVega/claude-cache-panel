@@ -2,7 +2,7 @@
   "manifestVersion": 2,
   "id": "claude-cache-panel",
   "name": "Claude Caches",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Live Claude Code sessions and how long each one's prompt cache has left, in a panel and in the status bar. Needs the cache-countdown mod for Claude Code, from the same repository.",
   "author": {
     "name": "Hisco Vega",
@@ -11,6 +11,13 @@
   "repository": "https://github.com/FrancisVega/claude-cache-panel",
   "license": "MIT",
   "icon": "assets/icon.png",
+  "screenshots": [
+    {
+      "path": "assets/screenshot.png",
+      "alt": "The Claude Caches panel: three live sessions with 2, 11 and 51 min of cache left in red, amber and green; two expired or no-data ones folded below.",
+      "caption": "Live sessions, the one that expires soonest on top"
+    }
+  ],
   "engines": {
     "orca": ">=1.4.248"
   },
