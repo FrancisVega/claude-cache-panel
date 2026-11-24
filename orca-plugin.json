@@ -1,0 +1,53 @@
+{
+  "manifestVersion": 2,
+  "id": "claude-cache-panel",
+  "name": "Claude Caches",
+  "version": "0.3.0",
+  "description": "Live Claude Code sessions and how long each one's prompt cache has left, in a panel and in the status bar. Needs the cache-countdown mod for Claude Code, from the same repository.",
+  "author": {
+    "name": "Hisco Vega",
+    "url": "https://github.com/FrancisVega"
+  },
+  "repository": "https://github.com/FrancisVega/claude-cache-panel",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "engines": {
+    "orca": ">=1.4.248"
+  },
+  "execution": "trusted-worker",
+  "pluginApi": 1,
+  "main": "src/worker.ts",
+  "contributes": {
+    "panels": [
+      {
+        "id": "claude-cache-panel",
+        "title": "Claude Caches",
+        "icon": "gauge",
+        "entry": "src/panel.tsx",
+        "ui": "components"
+      }
+    ],
+    "commands": [
+      {
+        "id": "open-next",
+        "title": "Claude Caches: Go to the session expiring soonest"
+      }
+    ],
+    "statusBarItems": [
+      {
+        "id": "next-expiry",
+        "icon": "gauge",
+        "tooltip": "Claude Caches",
+        "command": "open-next"
+      }
+    ]
+  },
+  "capabilities": [
+    {
+      "kind": "workspace:read"
+    },
+    {
+      "kind": "workspace:write"
+    }
+  ]
+}

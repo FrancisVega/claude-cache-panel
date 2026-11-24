@@ -1,0 +1,14 @@
+{
+  "name": "claude-cache-panel",
+  "owner": {
+    "name": "Hisco Vega"
+  },
+  "description": "The Claude Code mod behind the Claude Caches panel for Orca.",
+  "plugins": [
+    {
+      "name": "cache-countdown",
+      "source": "./mods/cache-countdown",
+      "description": "Status line countdown until the 1-hour prompt cache expires. The Claude Caches panel for Orca reads what it saves."
+    }
+  ]
+}

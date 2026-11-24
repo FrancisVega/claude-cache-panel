@@ -1,0 +1,12 @@
+{
+  "name": "cache-countdown",
+  "version": "0.2.0",
+  "description": "Status line countdown until the 1-hour prompt cache expires",
+  "author": {
+    "name": "Hisco Vega",
+    "url": "https://github.com/FrancisVega"
+  },
+  "repository": "https://github.com/FrancisVega/claude-cache-panel",
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
